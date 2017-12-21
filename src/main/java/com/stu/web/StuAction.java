@@ -10,13 +10,13 @@ import javax.annotation.Resource;
  * Created by xiu on 2017/12/20.
  */
 @Controller
-@RequestMapping("stuAction")
+@RequestMapping("/stuAction")
 public class StuAction {
 
     @Resource(name = "stuService")
     private StuService stuService;
 
-    @RequestMapping("test")
+    @RequestMapping("/test")
     public void testMsg(){
         System.out.println("测试通过");
     }
