@@ -1,5 +1,6 @@
 package com.stu.dao;
 
+import com.stu.entity.Stu;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -9,6 +10,9 @@ import org.springframework.stereotype.Repository;
 public class StuDao extends BaseDao{
 
     //增
+    public boolean addStu(Stu stu){
+        return false;
+    }
 
     //删
 
