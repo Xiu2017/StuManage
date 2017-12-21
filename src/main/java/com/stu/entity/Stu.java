@@ -1,8 +1,12 @@
 package com.stu.entity;
 
+import javax.persistence.*;
+
 /**
  * Created by xiu on 2017/12/20.
  */
+@Entity
+@Table(name = "t_stu")
 public class Stu {
     private int sno;  //编号
     private String sname;  //姓名
@@ -21,6 +25,8 @@ public class Stu {
         this.shobby = shobby;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getSno() {
         return sno;
     }

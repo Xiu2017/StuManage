@@ -11,6 +11,13 @@ public class StuDao extends BaseDao{
 
     //增
     public boolean addStu(Stu stu){
+        try{
+            getSession().save(stu);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         return false;
     }
 
