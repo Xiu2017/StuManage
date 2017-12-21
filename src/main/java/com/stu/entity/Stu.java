@@ -1,8 +1,15 @@
 package com.stu.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * Created by xiu on 2017/12/20.
  */
+@Entity
+@Table(name = "tb_stu")
 public class Stu {
     private int sno;  //编号
     private String sname;  //姓名
@@ -21,6 +28,8 @@ public class Stu {
         this.shobby = shobby;
     }
 
+    @Id
+    @GeneratedValue
     public int getSno() {
         return sno;
     }
