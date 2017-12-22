@@ -21,8 +21,8 @@
     学生性别：<input type="radio" name="ssex" value="男" checked />男
              <input type="radio" name="ssex" value="女" />女<br />
     学生爱好：<input type="checkbox" name="shobby" value="体育" />体育
-             <input type="checkbox" name="shobby" value="睡觉" />睡觉
-             <input type="checkbox" name="shobby" value="游戏" />游戏<br />
+             <input type="checkbox" name="shobby" value="阅读" />阅读
+             <input type="checkbox" name="shobby" value="睡觉" />睡觉<br />
     <<input type="submit" value="确认修改" />
 </form>
 <script>
