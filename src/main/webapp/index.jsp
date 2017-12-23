@@ -6,6 +6,6 @@
 <body>
     <h2>学生管理系统</h2>
     <a href="">添加学生</a><br />
-    <a href="">查询学生</a><br />
+    <a href="Main.jsp">查询学生</a><br />
 </body>
 </html>

@@ -1,10 +1,13 @@
 package com.stu.web;
 
+import com.stu.entity.Stu;
 import com.stu.service.StuService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by xiu on 2017/12/20.
@@ -28,6 +31,11 @@ public class StuAction {
     //改
 
     //查
+    @RequestMapping("/findStuList")
+    @ResponseBody
+    public List<Stu> findStuList(){
+        return stuService.findStuList();
+    }
 
     public void setStuService(StuService stuService) {
         this.stuService = stuService;
