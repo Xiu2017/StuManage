@@ -35,9 +35,14 @@
     stuSex === "男" ? sex[0].checked = true : sex[1].checked = true;
 
     for(var i = 0; i < hobby.length; i ++){
-        if(hobby[i].value == stuHobby[i].value){
+        if(hobby[i].value == stuHobby[i]){
             hobby[i].checked = true;
         }
+    }
+
+    if("${updateMessage}" == "-1"){
+        alert("修改成功！");
+        location.href = "${pageContext.request.contextPath}/stuController/findStuList";
     }
 </script>
 </body>
