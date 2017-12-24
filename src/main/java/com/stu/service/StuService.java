@@ -35,12 +35,7 @@ public class StuService {
      * @return Boolean
      */
     public boolean updateStu(Stu stu){
-        try {
-            stuDao.updateStu(stu);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
+        return stuDao.updateStu(stu);
     }
 
     //查
@@ -54,12 +49,7 @@ public class StuService {
      * @return Stu
      */
     public Stu getStuById(int id){
-        try {
-            return stuDao.getStuById(id);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        return stuDao.getStuById(id);
     }
 
     public void setStuDao(StuDao stuDao) {

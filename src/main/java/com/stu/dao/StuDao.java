@@ -42,6 +42,7 @@ public class StuDao extends BaseDao{
     public boolean updateStu(Stu stu){
         try {
             getSession().update(stu);
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
         }

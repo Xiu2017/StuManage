@@ -25,7 +25,8 @@
             <p style="color:red;">请选择要的删除学生!</p>
         </c:if>
     </div>
-    <table border="1" width="500" id="tab">
+
+    <table border="1" id="tab">
         <tr>
             <td>学生编号</td>
             <td>学生年龄</td>

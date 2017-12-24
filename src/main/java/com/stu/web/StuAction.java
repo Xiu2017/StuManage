@@ -89,7 +89,7 @@ public class StuAction {
     public String updateStu(Stu stu, RedirectAttributes attr){
         if (stuService.updateStu(stu)) {
             attr.addFlashAttribute("updateMessage", "1");
-            return "redirect:/stuController/findStuList";
+            return "redirect:/Main.jsp";
         }
         attr.addFlashAttribute("updateMessage", "-1");
         return "redirect:/stuAction/getStuById?sno=" + stu.getSno();
