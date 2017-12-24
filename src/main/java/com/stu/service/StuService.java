@@ -1,6 +1,7 @@
 package com.stu.service;
 
 import com.stu.dao.StuDao;
+import com.stu.entity.Stu;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,6 +19,9 @@ public class StuService {
     private StuDao stuDao;
 
     //增
+    public boolean addStu(Stu stu){
+        return stuDao.addStu(stu);
+    }
 
     //删
 
