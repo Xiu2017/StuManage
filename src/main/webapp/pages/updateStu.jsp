@@ -14,6 +14,7 @@
 </head>
 <body>
 <h1>修改学生信息</h1>
+<h4 style="color: red">${updateMessage == "1" ? "修改失败" : ""}</h4>
 <form action="${pageContext.request.contextPath}/stuAction/updateStu" method="post">
     <input type="hidden" name="sno" value="${stu.sno}" />
     学生姓名：<input type="text" name="sname" value="${stu.sname}" /><br />
@@ -23,7 +24,7 @@
     学生爱好：<input type="checkbox" name="shobby" value="体育" />体育
              <input type="checkbox" name="shobby" value="阅读" />阅读
              <input type="checkbox" name="shobby" value="睡觉" />睡觉<br />
-    <<input type="submit" value="确认修改" />
+    <input type="submit" value="确认修改" />
 </form>
 <script>
     var sex = document.getElementsByName("ssex");
