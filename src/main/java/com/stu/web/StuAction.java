@@ -44,6 +44,19 @@ public class StuAction {
     }
 
     //删
+    @RequestMapping("/deleteStu")
+    public String deleteStu(Stu stu, RedirectAttributes attr){
+        if(stu!=null){
+            if (stuService.deleteStu(stu)){
+                attr.addAttribute("rtype","1");
+            }else {
+                attr.addAttribute("rtype","-1");
+            }
+        }else {
+            attr.addAttribute("rtype","-2");
+        }
+        return "redirect:/Main.jsp";
+    }
 
     /**
      * 通过学生id获取学生

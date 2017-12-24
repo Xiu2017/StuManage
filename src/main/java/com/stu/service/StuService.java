@@ -25,6 +25,9 @@ public class StuService {
     }
 
     //删
+    public boolean deleteStu(Stu stu){
+        return stuDao.deleteStu(stu);
+    }
 
     /**
      * 修改学生

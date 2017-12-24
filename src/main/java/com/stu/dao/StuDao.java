@@ -24,6 +24,15 @@ public class StuDao extends BaseDao{
     }
 
     //删
+    public boolean deleteStu(Stu stu){
+        try {
+            getSession().delete(stu);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
+    }
 
     /**
      * 修改学生

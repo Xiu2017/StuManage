@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>修改学生信息</h1>
-<h4 style="color: red">${updateMessage == "1" ? "修改失败" : ""}</h4>
+<h4 style="color: red">${param.updateMessage == "1" ? "修改失败" : ""}</h4>
 <form action="${pageContext.request.contextPath}/stuAction/updateStu" method="post">
     <input type="hidden" name="sno" value="${stu.sno}" />
     学生姓名：<input type="text" name="sname" value="${stu.sname}" /><br />
@@ -35,7 +35,7 @@
     stuSex === "男" ? sex[0].checked = true : sex[1].checked = true;
 
     for(var i = 0; i < hobby.length; i ++){
-        if(hobby[i].value == stuHobby[i].value){
+        if(hobby[i].value == stuHobby[i]){
             hobby[i].checked = true;
         }
     }
