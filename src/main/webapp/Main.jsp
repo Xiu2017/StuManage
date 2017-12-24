@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <h2>学生列表</h2>
@@ -32,14 +32,16 @@
             $.each(data,function (i,v) {
                 var tr="<tr>";
                 tr+="<td>"+(i+1)+"</td>";
-                tr+="<td>"+(v.sname)+"</td>";
                 tr+="<td>"+(v.sage)+"</td>";
-                tr+="<td>"+(v.ssex)+"</td>";
                 tr+="<td>"+(v.shobby)+"</td>";
+                tr+="<td>"+(v.sname)+"</td>";
+                tr+="<td>"+(v.ssex)+"</td>";
                 tr+="</tr>";
                 $("#tab").append(tr);
             });
         });
     }
     window.onload=loadData;
+
+
 </script>
