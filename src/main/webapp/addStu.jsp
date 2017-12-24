@@ -34,6 +34,6 @@
                  <input name="shobby" type="checkbox" value="睡觉">睡觉<br/>
                  <input type="submit" value="添加学生">
     </form>
-    <a href="#">查看学生列表</a>
+    <a href="${pageContext.request.contextPath}/Main.jsp">查看学生列表</a>
 </body>
 </html>
