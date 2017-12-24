@@ -26,11 +26,37 @@ public class StuService {
 
     //删
 
-    //改
+    /**
+     * 修改学生
+     * @param stu Stu
+     * @return Boolean
+     */
+    public boolean updateStu(Stu stu){
+        try {
+            stuDao.updateStu(stu);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
     //查
     public List<Stu> findStuList(){
         return stuDao.findStuList("from Stu");
+    }
+
+    /**
+     * 通过id获取学生
+     * @param id int
+     * @return Stu
+     */
+    public Stu getStuById(int id){
+        try {
+            return stuDao.getStuById(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public void setStuDao(StuDao stuDao) {

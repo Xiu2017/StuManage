@@ -20,6 +20,7 @@
             <td>学生爱好</td>
             <td>学生姓名</td>
             <td>学生性别</td>
+            <td>操作</td>
         </tr>
     </table>
 </body>
@@ -36,6 +37,7 @@
                 tr+="<td>"+(v.sage)+"</td>";
                 tr+="<td>"+(v.ssex)+"</td>";
                 tr+="<td>"+(v.shobby)+"</td>";
+                tr+="<td><a href='${pageContext.request.contextPath}/stuAction/getStuById?sno="+(v.sno)+"'>修改学生</a></td>";
                 tr+="</tr>";
                 $("#tab").append(tr);
             });
